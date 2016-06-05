@@ -1,0 +1,30 @@
+
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trump Adventures</title>
+		<script type="text/javascript" src="http://76.28.150.193:8888/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="./gameengine.js"></script>
+		<script type="text/javascript" src="./assetmanager.js"></script>
+		<script type="text/javascript" src="./flag.js"></script>
+		<script type="text/javascript" src="./wrap.js"></script>
+		<script type="text/javascript" src="./BasicWalker.js"></script>
+
+		<script type="text/javascript" src="./assetloader.js"></script>
+		<script type="text/javascript" src="./trumpwalker.js"></script>
+		<script type="text/javascript" src="./IvankaWalker.js"></script>
+		<script type="text/javascript" src="./gunman.js"></script>
+		<script type="text/javascript" src="./main.js"></script>
+		<script type="text/javascript" src="./bullet.js"></script>
+		<script type="text/javascript" src="./ReporterWalker.js"></script>
+		<script type="text/javascript" src="./CartelWalker.js"></script>
+		<script type="text/javascript" src="./AssassinWalker.js"></script>
+	</head>
+	<body>
+		<button style="position: absolute; top:30px; left:900; width:200px; height:25px" onclick="saveCurrentGameState()">Save</button>
+		<button style="position: absolute; top:70px; left:900px; width:200px; height:25px"  onclick="loadGameState()">Load</button>
+		<h1 id="score" style="position: absolute; top:100px; left:890px; width:200px; height:25px">0</h1>
+		<!--HTML5 - easy way to make games-->
+		<canvas id="gameWorld" tabindex="1" width="2000" height="600"></canvas>
+	</body>
+</html>
